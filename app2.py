@@ -92,7 +92,7 @@ elif section == "Predict CO2":
     if os.path.exists(MODEL_FILENAME):
         with open(MODEL_FILENAME, "rb") as f:
             model = pickle.load(f)
-        st.success(f"Model loaded from `{MODEL_FILENAME}`.")
+        #st.success(f"Model loaded from `{MODEL_FILENAME}`.")
 
         st.subheader("Enter Input Features")
         with st.form("predict_form"):
