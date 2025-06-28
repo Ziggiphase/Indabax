@@ -107,7 +107,7 @@ elif section == "Predict CO2":
             }
             submitted = st.form_submit_button("Predict CO2")
             if submitted:
-                if features["Temperature"] == 0.0 or features["Humidity"] == 0.0 or features["MQ7_analog"] == 0.0 or features["MQ9_analog"] == 0.0 or features["MQ811_analog"] == 0.0 or features["MQ135_analog"]:
+                if features["Temperature"] == 0.0 or features["Humidity"] == 0.0 or features["MQ7_analog"] == 0.0 or features["MQ9_analog"] == 0.0 or features["MQ811_analog"] == 0.0 or features["MQ135_analog"]==0:
                     st.warning("Please enter valid feature values before predicting.")
                 else:
                     predicted(features, model)
