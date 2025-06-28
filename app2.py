@@ -115,7 +115,7 @@ elif section == "Predict CO2":
                     st.warning("Please enter valid feature values before predicting.")
                 elif features["MQ9_analog"] == 0.0:
                     st.warning("Please enter valid feature values before predicting.")
-                elif features["MQ811_analog"] == 0.0:
+                elif features["MG811_analog"] == 0.0:
                     st.warning("Please enter valid feature values before predicting.")
                 elif features["MQ135_analog"]==0.0:
                     st.warning("Please enter valid feature values before predicting.")   
